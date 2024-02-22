@@ -23,6 +23,8 @@ header {
 
     #navbar {
         width:90vw;
+        position: fixed;
+        top: 0;
         display: flex;
         justify-content:flex-end;
         font-size: 28px;
@@ -190,3 +192,25 @@ footer {
     bottom: 0;
     left:0;
 }
+@media (max-width: 460px) {
+  header{
+    height: unset; 
+  }#navbar{
+    width:83vw;
+    justify-content: center;
+  }
+  .projects-section{
+    padding-top: 5rem;
+  }
+  .contact-section{
+    width:80vw;
+    height: unset;
+  }
+  .contact-section-header{
+    font-size: 2rem;
+    
+  }
+  .contact-links{
+    grid-auto-flow: unset;
+  }
+  }
